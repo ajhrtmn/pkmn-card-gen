@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-pkmn-card-yellow { background-color: rgba(234,210,3,1); }
+.text-pkmn-card-yellow { color: rgba(234,210,3,1); }
+
+.font-teko { font-family: 'Teko', sans-serif; }
+.font-montserrat { font-family: 'Montserrat', sans-serif; }
+
+.divider { height: 1px; }
+.italic { font-style: italic; }
+.z10 { z-index: 10; }
