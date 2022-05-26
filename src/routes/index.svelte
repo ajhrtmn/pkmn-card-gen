@@ -108,7 +108,7 @@
 		color: #000000;
 		overflow: hidden;
 		background-color: rgba(207, 29, 29, 1);
-		background-image: linear-gradient(45deg, rgb(156, 18, 18), rgb(189, 181, 107),rgb(204, 166, 148));
+		background-image: linear-gradient(45deg, rgb(175, 1, 1), rgb(214, 159, 75),rgb(224, 151, 121));
 	}
 	#vitals {
 		position: relative;
