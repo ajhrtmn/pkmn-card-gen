@@ -64,7 +64,7 @@
 
 
 
-			<img class="fire-bg" src="https://images.unsplash.com/photo-1543005472-1b1d37fa4eae?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687" alt="">
+			<img class="card-bg" src="https://images.unsplash.com/photo-1519145127298-00d5287fcdd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Z3J1bmdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
 		</div><!-- id="container" -->
 	</div>
 </section>
@@ -79,10 +79,12 @@
 		padding: 4px;
 	}
 
-	.fire-bg {
+	.card-bg {
 		opacity: .25;
 		position: absolute; top: 0; object-fit: cover;
 		width: 400px; height: 560px;
+		mix-blend-mode: lighten;
+		filter: grayscale(100%);
 	}
 
 	#name { transform: scaleX(1.125); }
@@ -106,7 +108,7 @@
 		color: #000000;
 		overflow: hidden;
 		background-color: rgba(207, 29, 29, 1);
-		background-image: linear-gradient(45deg, rgba(207, 29, 29, 1), rgb(211, 201, 109), rgb(224, 166, 166));;
+		background-image: linear-gradient(45deg, rgb(156, 18, 18), rgb(189, 181, 107),rgb(204, 166, 148));
 	}
 	#vitals {
 		position: relative;
