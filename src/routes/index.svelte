@@ -39,14 +39,16 @@
 
 				<!-- <div class="w-11/12 mx-auto bg-pkmn-card-yellow divider"></div> -->
 
-				<div id="vitals" class="p-2 grid grid-cols-12 gap-2 items-baseline relative z10">
-					<div id="name" class="col-span-6 font-bold text-xl">
+				<div id="vitals" class="py-1 grid grid-cols-2 gap-2 items-baseline relative z10">
+					<div id="name" class="col-span-1 font-bold text-xl">
 						<div class="">Arcanine</div>
 					</div>
-					<div id="hp" class="col-span-4 text-red-600 font-bold text-lg text-right">100 HP</div>
-					<div id="type" class="col-span-2">
-						<div class="bg-red-500 type-icon flex items-center justify-center">
-							<span class="material-icons text-black-500">local_fire_department</span>
+					<div class="col-span-1 flex flex-row gap-2 items-end justify-end">
+						<div id="hp" class="col-span-4 text-red-600 font-bold text-lg text-right">100 HP</div>
+						<div id="type" class="col-span-2 flex flex-col items-end">
+							<div class="bg-red-500 type-icon flex items-center justify-center">
+								<span class="material-icons text-black-500">local_fire_department</span>
+							</div>
 						</div>
 					</div>
 				</div><!-- id="vitals" -->
@@ -74,22 +76,23 @@
 		background-size: cover;
 		position: relative;
 		min-height: 100vh;
+		padding: 4px;
 	}
 
 	.fire-bg {
-		opacity: .35;
+		opacity: .25;
 		position: absolute; top: 0; object-fit: cover;
-		width: 300px; height: 500px;
+		width: 400px; height: 560px;
 	}
 
-	#name > div { transform: scaleX(.8); margin-left: -10%; }
-	#name, #hp { transform: scaleY(1.3); }
+	#name { transform: scaleX(1.125); }
+	#name, #hp { transform: scaleY(1.4); }
 
-	#avatar > img { max-width: 85%; max-height: 85%; transform: scaleX(-1); }
+	#avatar > img { max-width: 85%; height: 85%; transform: scaleX(-1); }
 	#avatar {
-		border-width: .33rem; border-style: solid;
+		border-width: .5rem; border-style: solid;
 		border-color: rgba(234,210,3,1);
-		margin: 0 1rem;
+		margin: 4px 1.5rem;
 		aspect-ratio: 4/3;
 		box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.493);
 		background-size: cover;
@@ -97,16 +100,19 @@
 	}
 
 	#container {
-		width: 300px; height: 500px;
+		width: 90vw;
+		max-width: 400px;
+		aspect-ratio: 1/1.4;
 		color: #000000;
 		overflow: hidden;
 		background-color: rgba(207, 29, 29, 1);
-		background-image: linear-gradient(45deg, rgba(207, 29, 29, 1), rgb(211, 201, 109), white);;
+		background-image: linear-gradient(45deg, rgba(207, 29, 29, 1), rgb(211, 201, 109), rgb(224, 166, 166));;
 	}
 	#vitals {
 		position: relative;
-		bottom: 15px;
-		margin-bottom: -15px;
+		bottom: 10px;
+		margin: 2px 1rem;
+		margin-bottom: -10px;
 	}
 
 	.type-icon {
